@@ -17,12 +17,12 @@ class UserController extends Controller
         $data=request()->input();
     }
 
-    //注册接口测试
+    //注册接口测试u
     public function reg(){
         //数据
         $url='http://ljpassport.xx20.top/pass/reg';
         $data=[
-            'pass_name'=>'huangxiaobo',
+            'pass_name'=>'lijian',
             'pass_tel'=>'123456789',
             'pass_email'=>'737@qq.com',
             'pass_pwd'=>'123456'
@@ -37,9 +37,9 @@ class UserController extends Controller
 
     //登录接口测试
     public function login(){
-        $url='http://passport.bianaoao.top/pass/login';
+        $url='http://ljpassport.xx20.top/pass/login';
         $data=[
-            'name'=>'huangxiaobo',
+            'name'=>'lijian',
             'pwd'=>'123456'
         ];
         $ch=curl_init();
@@ -52,7 +52,7 @@ class UserController extends Controller
 
     //调用用户信息接口
     public function userinfo(){
-        $url='http://passport.bianaoao.top/pass/Userinfo?name=zhangsan';
+        $url='http://ljuser.xx20.top/pass/Userinfo?name=zhangsan';
         $token='qXN1YMYDrV2koWtNG6HtSO9l5Ybng5rj';
         $data=[
             'token:'.$token,
