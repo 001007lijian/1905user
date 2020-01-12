@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('user/reg','Users\UserController@reg');
+Route::get('user/login','Users\UserController@login');
+Route::get('user/userinfo','Users\UserController@userinfo');
+Route::get('user/reglist','Users\UserController@reglist');
+Route::get('user/reginsert','Users\UserController@reginsert');
