@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Users;
+namespace App\Http\Controllers\users;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -24,7 +24,7 @@ class UserController extends Controller
         $data=[
             'pass_name'=>'lijian',
             'pass_tel'=>'123456789',
-            'pass_email'=>'737@qq.com',
+            'pass_email'=>'2351584897@qq.com',
             'pass_pwd'=>'123456'
         ];
         $ch=curl_init();
@@ -52,7 +52,7 @@ class UserController extends Controller
 
     //调用用户信息接口
     public function userinfo(){
-        $url='http://ljuser.xx20.top/pass/Userinfo?name=zhangsan';
+        $url='http://ljpassport.xx20.top/pass/Userinfo?name=zhangsan';
         $token='qXN1YMYDrV2koWtNG6HtSO9l5Ybng5rj';
         $data=[
             'token:'.$token,
